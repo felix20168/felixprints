@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Felixprints — 3D printing, made personal</title>
+  <meta name="description" content="Custom 3D printed objects, gifts and designs made to order.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">f</span><span>felix<span>prints</span></span></a><nav><a href="#shop">Shop</a><a href="#custom">Custom print</a><a href="#materials">Materials</a><a class="admin-link" href="admin.html">Admin ↗</a></nav><button class="cart-button" id="cartButton">Cart <b id="cartCount">0</b></button></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">Small-batch 3D printing / Melbourne</p><h1>Make something<br><em>worth keeping.</em></h1><p class="hero-copy">Thoughtful 3D printed objects, made to order in the colour and material you choose.</p><div class="hero-actions"><a class="button dark" href="#shop">Browse products <span>↗</span></a><a class="under-link" href="#custom">Have your own design? →</a></div></div><div class="hero-object" aria-label="Abstract 3D printed object"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="coil"></div><span>FP / 01</span></div></section>
+    <section class="announcement"><span>NEW</span> Custom designs welcome — upload your file and get a quote.</section>
+    <section class="section" id="shop"><div class="section-heading"><div><p class="eyebrow">01 / Ready to print</p><h2>Good objects,<br><em>better gifts.</em></h2></div><p>Choose a design, pick your filament colour, and we’ll make it yours.</p></div><div class="product-grid" id="productGrid"></div></section>
+    <section class="materials section" id="materials"><div><p class="eyebrow">02 / Choose your finish</p><h2>Colour is<br><em>part of it.</em></h2><p>Every product is printed to order. Availability updates from the studio dashboard.</p><a class="under-link" href="#custom">Need a different colour? Ask us →</a></div><div class="material-list" id="materialList"></div></section>
+    <section class="custom section" id="custom"><div class="custom-card"><div><p class="eyebrow">03 / Your idea</p><h2>Bring a file.<br><em>Make it real.</em></h2><p>Upload an STL, OBJ, 3MF, or image reference. Tell us what you have in mind and we’ll reply with a price and print plan.</p></div><form id="customForm"><label>Your name<input name="name" required placeholder="Your name"></label><label>Email<input name="email" required type="email" placeholder="you@example.com"></label><label>What should we print?<textarea name="brief" required placeholder="Tell us about your design..."></textarea></label><label>Upload a design<input name="file" type="file" accept=".stl,.obj,.3mf,.png,.jpg,.jpeg"></label><button class="button dark" type="submit">Request a quote <span>↗</span></button><p class="form-message" id="customMessage"></p></form></div></section>
+  </main>
+  <footer><div><a class="brand" href="index.html"><span class="brand-mark">f</span><span>felix<span>prints</span></span></a><p>Made in small batches.<br>Made for your shelf.</p></div><div><p class="footer-title">Explore</p><a href="#shop">Shop</a><a href="#custom">Custom print</a><a href="#materials">Materials</a></div><div><p class="footer-title">Studio</p><a href="mailto:hello@felixprints.com">hello@felixprints.com</a><a href="admin.html">Admin</a></div><small>© 2026 Felixprints</small></footer>
+  <aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2>Your cart</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button dark" id="checkoutButton">Request checkout <span>↗</span></button><p id="checkoutMessage"></p></div></aside><div class="scrim" id="scrim"></div>
+  <script src="app.js"></script>
+</body>
+</html>
