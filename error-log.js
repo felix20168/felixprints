@@ -1,4 +1,4 @@
-/* Voxprints error reporter.
+/* Felixprints error reporter.
  *
  * Loaded on every page. Catches crashes, failed requests and failed script
  * loads, gives each distinct error a short stable code (e.g. E-7F3K9), and
